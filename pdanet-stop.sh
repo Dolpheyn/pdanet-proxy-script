@@ -16,3 +16,6 @@ sed -i '90s/.*/#use_proxy=on/'				    /etc/wgetrc
 
 # unset proxy for git
 git config --global --unset http.proxy
+
+# unset proxy for chrome (only for root user)
+sed -i '1s/.*/exec \-a \"\$0\" \"\$HERE\/chrome\" \"\$\@\" \-\-no\-sandbox \-\-user\-data\-dir' text.txt

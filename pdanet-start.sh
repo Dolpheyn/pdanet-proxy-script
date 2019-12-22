@@ -17,3 +17,6 @@ sed -i '90s/.*/use_proxy=on/'				    /etc/wgetrc
 
 # set http proxy for git
 git config --global http.proxy http://192.168.49.1:8000
+
+# set http proxy for google chrome
+sed -i '1s/.*/exec \-a \"\$0\" \"\$HERE\/chrome\" \"\$\@\" \-\-no\-sandbox \-\-user\-data\-dir \-\-proxy\-server\=http:\/\/192\.168\.49\.1\:8000/' text.txt
