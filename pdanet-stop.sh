@@ -18,4 +18,4 @@ sed -i '90s/.*/#use_proxy=on/'				    /etc/wgetrc
 git config --global --unset http.proxy
 
 # unset proxy for chrome (only for root user)
-sed -i '1s/.*/exec \-a \"\$0\" \"\$HERE\/chrome\" \"\$\@\"'  /usr/bin/google-chrome-stable
+sed -i '1s/.*/exec \-a \"\$0\" \"\$HERE\/chrome\" \"\$\@\"/'  /usr/bin/google-chrome-stable
