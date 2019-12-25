@@ -19,4 +19,4 @@ sed -i '90s/.*/use_proxy=on/'				    /etc/wgetrc
 git config --global http.proxy http://192.168.49.1:8000
 
 # set http proxy for google chrome
-sed -i '49s/.*/exec \-a \"\$0\" \"\$HERE\/chrome\" \"\$\@\" \-\-proxy\-server\=http:\/\/192\.168\.49\.1\:8000/' /usr/bin/google-chrome-stable
+sed -i '49s/.*/exec \-a \"\$0\" \"\/opt\/google\/chrome\/chrome\" \"\$\@\" \-\-proxy\-server\=http:\/\/192\.168\.49\.1\:8000/' /usr/bin/google-chrome-stable
